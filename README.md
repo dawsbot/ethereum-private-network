@@ -13,13 +13,12 @@ Install Geth
 [Geth](https://github.com/ethereum/go-ethereum/wiki/geth) is the command line
 interface for running a full ethereum node implemented in Go.
 
-> brew update
-
-> brew upgrade
-
-> brew tap ethereum/ethereum
-
-> brew install ethereum
+```sh
+brew update
+brew upgrade
+brew tap ethereum/ethereum
+brew install ethereum
+```
 
 Initialize local test network
 -----------------------------
@@ -101,7 +100,9 @@ Start ethereum mining node
 
 The ethereum network needs a mining node to process transactions:
 
-> bin/mine
+```sh
+bin/mine
+```
 
 The first time you run geth on your machine, it will generate a DAG.  This can
 take several minutes depending upon the speed of your CPU.  Once it finishes
@@ -121,7 +122,9 @@ Attach to your mining node
 
 You can interact with the ethereum network by attaching to your mining node:
 
-> bin/attach
+```sh
+bin/attach
+```
 
 This will present a javascript console where you can run various commands
 
